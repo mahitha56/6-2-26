@@ -39,7 +39,6 @@ num	count	max_count
 1	1	2
 1	2	2
 1	3	3
-
 Output → 3
 #
 
