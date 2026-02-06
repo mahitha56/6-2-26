@@ -41,6 +41,23 @@ num	count	max_count
 1	3	3
 Output → 3
 #
+# class Solution:
+#     def maximumProduct(self, nums: List[int]) -> int:
+#         nums.sort()
+#         # a=nums[-1]*nums[-2]*nums[-3]
+#         # b = nums[0] * nums[1] * nums[-1]
+#         # return max(a,b)
+#         n=len(nums)
+#         res1=nums[n-1]*nums[n-2]*nums[n-3] 
+#         res2=nums[n-1]*nums[0]*nums[1] 
+#         return max(res1,res2)
+class Solution:
+    def maximumProduct(self, nums: List[int]) -> int:
+        nums.sort()
+        n=len(nums)
+        res1=nums[n-1]*nums[n-2]*nums[n-3] 
+        res2=nums[n-1]*nums[0]*nums[1] 
+        return max(res1,res2)
 
 
 
